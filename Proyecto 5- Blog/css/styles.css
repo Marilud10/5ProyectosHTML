@@ -1,0 +1,256 @@
+body {
+    background-image: url(../IMG/Fondo.jpg);
+}
+
+
+.blog{
+    padding: 50px;
+}
+
+.blog h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1b5e20;
+}
+
+.blog-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.articulo{
+    background: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+
+    transition: 0.4s;
+}
+
+.articulo:hover{
+    transform: translateY(-10px);
+}
+
+.articulo img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.articulo h3{
+    padding: 15px;
+    color: #2e7d32;
+    font-family: Georgia, serif;
+}
+
+.articulo p{
+    padding: 0 15px 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.articulo a{
+    display: inline-block;
+
+    margin: 0 15px 20px;
+
+    text-decoration: none;
+
+    color: #2e7d32;
+
+    font-weight: bold;
+}
+
+.articulo a:hover{
+    color: #66bb6a;
+}
+
+@media (max-width: 768px){
+
+    .blog-grid{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+.articulo-reciclaje{
+    max-width: 900px;
+
+    margin: 50px auto;
+
+    padding: 40px;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.articulo-reciclaje h2{
+    text-align: center;
+
+    color: #2e7d32;
+
+    font-size: 2.5rem;
+
+    margin-bottom: 25px;
+
+    font-family: Georgia, serif;
+
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.articulo-reciclaje img{
+    width: 100%;
+
+    height: 400px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    margin-bottom: 25px;
+
+    transition: 0.5s;
+}
+
+.articulo-reciclaje img:hover{
+    transform: scale(1.02);
+}
+
+.articulo-reciclaje p{
+    font-size: 1.1rem;
+
+    line-height: 1.9;
+
+    color: #444;
+
+    margin-bottom: 20px;
+
+    text-align: justify;
+}
+
+
+
+
+
+
+.articulo-energia{
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.articulo-energia h2{
+    text-align: center;
+
+    color: #2e7d32;
+
+    font-size: 2.5rem;
+
+    margin-bottom: 25px;
+
+    font-family: Georgia, serif;
+
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.articulo-energia img{
+    width: 100%;
+
+    height: 400px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    margin-bottom: 25px;
+
+    transition: 0.5s;
+}
+
+.articulo-energia img:hover{
+    transform: scale(1.02);
+}
+
+.articulo-energia p{
+    font-size: 1.1rem;
+
+    line-height: 1.9;
+
+    color: #444;
+
+    text-align: justify;
+
+    margin-bottom: 20px;
+}
+
+
+
+.articulo-habitos{
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.articulo-habitos h2{
+    text-align: center;
+
+    color: #2e7d32;
+
+    font-size: 2.5rem;
+
+    margin-bottom: 25px;
+
+    font-family: Georgia, serif;
+
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.articulo-habitos img{
+    width: 100%;
+    height: 400px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    margin-bottom: 25px;
+
+    transition: 0.5s;
+}
+
+.articulo-habitos img:hover{
+    transform: scale(1.02);
+}
+
+.articulo-habitos p{
+    font-size: 1.1rem;
+
+    line-height: 1.9;
+
+    color: #444;
+
+    text-align: justify;
+
+    margin-bottom: 20px;
+}

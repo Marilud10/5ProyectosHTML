@@ -1,0 +1,65 @@
+.newsletter{
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+
+    background: #e8f1f5;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.newsletter h2{
+    color: #2e367d;
+}
+
+.newsletter form{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.newsletter input{
+    flex: 1;
+
+    padding: 15px;
+
+    border: 1px solid #4c5baf;
+
+    border-radius: 10px;
+}
+
+.newsletter button{
+    padding: 15px 25px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #2e2f7d;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.newsletter button:hover{
+    background: #4caf99;
+
+    transform: translateY(-3px);
+}
+
+.aviso{
+    margin-top: 15px;
+
+    font-size: 12px;
+
+    color: #555;
+}
