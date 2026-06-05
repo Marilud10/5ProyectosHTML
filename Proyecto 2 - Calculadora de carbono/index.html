@@ -7,40 +7,33 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <section class="huella-carbono">
+    <section class="calculadora">
 
-        <h2>Calculadora de Huella de Carbono</h2>
-    
-        <form>
-    
+        
+
+        <form action="resultado.html">
+            <h1>Calculadora de Huella de Carbono</h1>
             <h3>Hogar</h3>
-    
-            <label for="energia">Consumo de energía mensual (kWh)</label>
-            <input type="number" id="energia" placeholder="Ej: 250">
-    
+
+            <input type="number" placeholder="Consumo de energía mensual">
+
             <h3>Transporte</h3>
-    
-            <label for="transporte">Medio de Transporte</label>
-            <select id="transporte">
+
+            <select>
                 <option>Automóvil</option>
                 <option>Motocicleta</option>
-                <option>Bus</option>
                 <option>Bicicleta</option>
-                <option>Caminando</option>
+                <option>Transporte Público</option>
             </select>
-    
-            <label for="km">Kilómetros recorridos al mes</label>
-            <input type="number" id="km" placeholder="Ej: 500">
-    
-            <button type="submit">Calcular Impacto</button>
-    
+
+            <input type="number" placeholder="Kilómetros recorridos al mes">
+
+            <button type="submit">
+                Calcular Impacto
+            </button>
+
         </form>
-    
-        <div class="resultado">
-            <h3>Resultado</h3>
-            <p>Impacto total en CO₂: ______ kg/mes</p>
-        </div>
-    
+
     </section>
     
 </body>
