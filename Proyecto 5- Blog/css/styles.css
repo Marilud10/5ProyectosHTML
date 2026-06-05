@@ -17,6 +17,8 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+
+    
 }
 
 .articulo{
@@ -29,6 +31,19 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 
     transition: 0.4s;
+
+
+    background: linear-gradient(
+        270deg,
+        #7edd86,
+        #f0db69,
+        #169235,
+        #dcdd7e
+    );
+
+    background-size: 400% 400%;
+
+    animation: fondoMovil 6s ease infinite;
 }
 
 .articulo:hover{
@@ -253,4 +268,27 @@ body {
     text-align: justify;
 
     margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes fondoMovil{
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
 }

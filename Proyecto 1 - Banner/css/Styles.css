@@ -130,3 +130,126 @@ header{
 .imgLibro {
     width: 100px;
 }
+
+
+.flash-sale{
+    background: linear-gradient(
+        270deg,
+        #dd7ea2,
+        #f0db69,
+        #ff9671,
+        #dd7ea2
+    );
+
+    background-size: 400% 400%;
+
+    animation: fondoMovil 6s ease infinite;
+}
+
+@keyframes fondoMovil{
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+
+
+@property --horas {
+    syntax: "<integer>";
+    inherits: false;
+    initial-value: 2;
+}
+
+@property --minutos {
+    syntax: "<integer>";
+    inherits: false;
+    initial-value: 0;
+}
+
+@property --segundos {
+    syntax: "<integer>";
+    inherits: false;
+    initial-value: 0;
+}
+
+.countdown {
+    font-size: 2rem;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.horas,
+.minutos,
+.segundos {
+    display: inline-block;
+}
+
+.horas {
+    counter-reset: h var(--horas);
+    animation: horas 7260s linear infinite;
+    animation-delay: 1s;
+}
+
+.horas::after {
+    content: counter(h);
+}
+
+.minutos {
+    counter-reset: m var(--minutos);
+    animation: minutos 3600s steps(60) infinite;
+}
+
+.minutos::after {
+    content: counter(m, decimal-leading-zero);
+}
+
+.segundos {
+    counter-reset: s var(--segundos);
+    animation: segundos 60s steps(60) infinite;
+}
+
+.segundos::after {
+    content: counter(s, decimal-leading-zero);
+}
+
+@keyframes segundos {
+    from { --segundos: 59; }
+    to { --segundos: 0; }
+}
+
+@keyframes minutos {
+    from { --minutos: 59; }
+    to { --minutos: 0; }
+}
+
+@keyframes horas {
+    to { --horas: 0; }
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.countdown a {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.button{
+    padding: 15px;
+    background-color: tomato;
+    animation: latido2 1s infinite;
+    cursor: pointer;
+}
