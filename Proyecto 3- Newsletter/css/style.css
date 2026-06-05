@@ -1,3 +1,17 @@
+
+body {
+    background-image: url(../fondo.jpg);
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-position: center center;
+
+    background-attachment: fixed;
+
+    min-height: 100vh;
+}
+
 .newsletter{
     max-width: 600px;
     margin: 50px auto;
@@ -13,7 +27,7 @@
 }
 
 .newsletter h2{
-    color: #2e367d;
+    color: #2e7d32;
 }
 
 .newsletter form{
@@ -27,7 +41,7 @@
 
     padding: 15px;
 
-    border: 1px solid #4c5baf;
+    border: 1px solid #4caf65;
 
     border-radius: 10px;
 }
@@ -39,7 +53,7 @@
 
     border-radius: 10px;
 
-    background: #2e2f7d;
+    background: #2e7d46;
 
     color: white;
 
@@ -51,7 +65,7 @@
 }
 
 .newsletter button:hover{
-    background: #4caf99;
+    background: #4faf4c;
 
     transform: translateY(-3px);
 }
@@ -61,5 +75,57 @@
 
     font-size: 12px;
 
-    color: #555;
+    color: #0c5f1e;
+}
+
+.banner-suscrito{
+    max-width: 700px;
+    margin: 80px auto;
+
+    padding: 40px;
+
+    border-radius: 20px;
+    text-align: center;
+    color: #130f10;
+
+    background: linear-gradient(
+        270deg,
+        #38d432,
+        #f0db69,
+        #367922,
+        #0dd4a2
+    );
+
+    background-size: 400% 400%;
+
+    animation: fondoMovil 6s ease infinite;
+}
+    
+@keyframes fondoMovil{
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.banner-suscrito img{
+    width: 280px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.banner-suscrito h1{
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.banner-suscrito p{
+    font-size: 1.2rem;
 }

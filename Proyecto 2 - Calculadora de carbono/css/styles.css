@@ -4,7 +4,19 @@ body{
     background: #f5fff6;
 
     margin: 0;
+
+    background-image: url(../Fondo.jpg);
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-position: center center;
+
+    background-attachment: fixed;
+
+    min-height: 100vh;
 }
+
 
 .calculadora,
 .resultado{
@@ -50,7 +62,7 @@ button{
 
     border-radius: 15px;
 
-    background: #2e7d32;
+    background: #0bc214;
 
     color: white;
 
@@ -69,7 +81,7 @@ button:hover{
     background: linear-gradient(
         135deg,
         #81c784,
-        #4caf50
+        #08360a
     );
 
     color: white;
