@@ -22,7 +22,23 @@ header{
 }
 
 
+footer {
+    border-radius: 20px;
+    text-align: center;
+    color: #130f10;
 
+    background: linear-gradient(
+        270deg,
+        #dd7ea2,
+        #f0db69,
+        #ff9671,
+        #dd7ea2
+    );
+
+    background-size: 400% 400%;
+
+    animation: fondoMovil 6s ease infinite;
+}
 
 
 
@@ -119,7 +135,7 @@ header{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     padding-top: 10px;
-    background-color: #facbdd;
+    background-color: #dd7ea2;
     border-radius: 10px;
     align-items: center;
     text-align: center;
